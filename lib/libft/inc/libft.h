@@ -28,7 +28,7 @@
 #  define TRUE			!FALSE
 # endif
 
-typedef int				t_bool;
+typedef unsigned int	t_bool;
 typedef unsigned char	t_byte;
 typedef unsigned int	t_uint;
 typedef unsigned short	t_ushrt;

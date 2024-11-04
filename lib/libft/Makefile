@@ -40,9 +40,16 @@ SRC = \
 	ft_strncmp\
 	ft_strncpy\
 	ft_strnlen\
-	ft_strsplit\
 	ft_strsub\
 	ft_strupcase
+
+ifeq ($(shell uname -m),arm64)
+	SRC += ft_strsplit_arm64
+	AS = as
+	ASFLAGS =
+else
+	SRC += ft_strsplit
+endif
 
 # [ PRINTF ]
 
